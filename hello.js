@@ -6,3 +6,10 @@ step1(function(res1) {
     });
   });
 });
+
+E.on("evt", g);
+function f(){
+    setTimeout(function(){
+        E.trigger("evt");
+    })
+}
