@@ -13,3 +13,12 @@ function f(){
         E.trigger("evt");
     })
 }
+
+
+E.subscribe("evt", g);
+function f(){
+setTimeout(function () {
+// f的任务代码
+E.publish("evt");
+}, 1000);
+}
